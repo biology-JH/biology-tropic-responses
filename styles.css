@@ -130,3 +130,39 @@ body{font-size:19px;line-height:1.72}
   .lesson-section#investigations .figure-one .experiment-panel strong{font-size:19px}
   .lesson-section#investigations .figure-one .experiment-panel p{font-size:20px;padding:14px 15px}
 }
+
+/* Compact layout refinement: preserve clarity without the oversized vertical gaps. */
+.lesson-section#orientation .organ-response{grid-template-columns:.95fr 1.05fr;gap:24px;align-items:center}
+.lesson-section#orientation .organ-copy h3{font-size:34px}
+.lesson-section#orientation .organ-response .diagram-frame.split{grid-template-columns:1fr 1fr;gap:14px;padding:18px 18px 14px}
+.lesson-section#orientation .organ-response .diagram-frame.split img{height:280px}
+.lesson-section#investigations .figure-one .experiment-panels{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.lesson-section#investigations .figure-one .experiment-panel{padding:16px 16px 18px;gap:10px}
+.lesson-section#investigations .figure-one .experiment-panel:nth-child(3){grid-column:1}
+.lesson-section#investigations .figure-one .experiment-panel img{height:370px}
+.lesson-section#investigations .figure-one .experiment-panel .panel-number{top:12px;left:12px;width:38px;height:38px;font-size:18px}
+.lesson-section#investigations .figure-one .experiment-panel strong{font-size:18px}
+.lesson-section#investigations .figure-one .experiment-panel p{font-size:19px;padding:12px 14px;line-height:1.25}
+.lesson-section#investigations .figure-one .figure-kicker{margin-bottom:16px;padding-bottom:12px}
+.lesson-section#investigations .figure-one .figure-kicker strong{font-size:19px}
+.lesson-section#investigations .figure-one{padding:22px}
+.lesson-section#investigations .figure-one>figcaption{font-size:18px;margin-top:18px}
+.lesson-section#investigations .check-in[data-quiz="figure-check"] .options{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.lesson-section#investigations .check-in[data-quiz="figure-check"] .options label{height:100%;align-items:flex-start}
+@media(max-width:980px){
+  .lesson-section#orientation .organ-response{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .lesson-section#orientation .organ-response .diagram-frame.split{grid-template-columns:1fr}
+  .lesson-section#orientation .organ-response .diagram-frame.split img{height:250px}
+  .lesson-section#investigations .figure-one .experiment-panels{grid-template-columns:1fr;gap:16px}
+  .lesson-section#investigations .figure-one .experiment-panel:nth-child(3){grid-column:auto}
+  .lesson-section#investigations .figure-one .experiment-panel img{height:360px}
+  .lesson-section#investigations .check-in[data-quiz="figure-check"] .options{grid-template-columns:1fr}
+}
+
+/* Compact evidence card for the seed-orientation practical. */
+.experiment-note{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:center;margin:22px 0;padding:20px 22px;background:linear-gradient(120deg,#eef5eb,#fffefb);border:1px solid #cbdcc7;border-left:5px solid var(--green);border-radius:8px}
+.experiment-note h3{font-size:23px;line-height:1.15;margin:8px 0 0}
+.experiment-note p{margin:0;color:#45584d;font-size:16px;line-height:1.5}
+@media(max-width:720px){.experiment-note{grid-template-columns:1fr;gap:10px;padding:18px}.experiment-note h3{font-size:21px}}

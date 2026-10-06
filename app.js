@@ -3,6 +3,7 @@ const quizData={
   'figure-check':{correct:'b',feedback:'Correct. Unilateral light shifts auxin towards the shaded side. Those cells elongate more, so unequal growth makes the shoot curve towards the light.'},
   'fair-test-check':{correct:['a','c'],feedback:'Correct. Replication with comparable seedlings improves reliability, while one consistent measurement method makes the comparison valid.'},
   'investigation-check':{correct:'a',feedback:'Correct. The smaller angle is evidence that rotation reduces a consistent one-sided gravity stimulus. It does not remove gravity, auxin or growth.'},
+  'orientation-check':{correct:'a',feedback:'Correct. The radicle and plumule respond to the gravitational direction, even when the seed starts upside down or on its side.'},
   'auxin-check':{correct:'a',feedback:'Correct. The unequal cell lengths, despite similar division rates, identify differential elongation as the cause of curvature rather than extra cell division.'},
   'evidence-check':{correct:'a',feedback:'Correct. The result supports a diffusible, water-soluble chemical signal released by the tip that can move through gelatin and produce unequal elongation.'},
   'space-check':{correct:'b',feedback:'Correct. Directional light can still act as a cue in microgravity. Shoots are generally positive phototropic and roots generally negative phototropic.'},
@@ -17,7 +18,7 @@ document.querySelector('[data-scroll-top]')?.addEventListener('click',()=>window
 const sections=[...document.querySelectorAll('[data-section]')];const navItems=[...document.querySelectorAll('[data-nav]')];
 function setActive(id){navItems.forEach(item=>item.classList.toggle('active',item.dataset.nav===id))}
 const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)setActive(entry.target.dataset.section)});updateProgress()},{rootMargin:'-18% 0px -70% 0px',threshold:0});sections.forEach(section=>observer.observe(section));
-function updateProgress(){const y=window.scrollY+window.innerHeight*.45;const docHeight=document.documentElement.scrollHeight-window.innerHeight;const pct=Math.min(100,Math.max(0,Math.round((window.scrollY/docHeight)*100)));const explored=document.getElementById('progressText');if(explored)explored.textContent=`${pct}% explored · ${answered.size}/8 checks`;}
+function updateProgress(){const y=window.scrollY+window.innerHeight*.45;const docHeight=document.documentElement.scrollHeight-window.innerHeight;const pct=Math.min(100,Math.max(0,Math.round((window.scrollY/docHeight)*100)));const explored=document.getElementById('progressText');if(explored)explored.textContent=`${pct}% explored · ${answered.size}/9 checks`;}
 window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();
 const search=document.getElementById('vocabSearch');search?.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();document.querySelectorAll('.vocab-card').forEach(card=>card.classList.toggle('hidden',q&&!card.dataset.term.includes(q)))});
 // Allow keyboard users to see a selected option clearly without changing the native control.
