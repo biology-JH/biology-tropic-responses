@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive Biology lesson on tropic responses, phototropism, gravitropism and auxin." />
+  <title>Tropic Responses | Biology Learning Lab</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#start" aria-label="Growth Trace home">
+        <span class="brand-mark" aria-hidden="true"><span></span><i></i></span>
+        <span><strong>GROWTH TRACE</strong><small>Biology Learning Lab</small></span>
+      </a>
+      <div class="topbar-meta">
+        <span class="deck-label">Unit 14.5</span>
+        <span class="progress-text" id="progressText">0% explored</span>
+      </div>
+    </header>
+
+    <div class="lesson-layout">
+      <aside class="lesson-rail" aria-label="Lesson navigation">
+        <div class="rail-heading"><span>Lesson path</span><b>14.5</b></div>
+        <nav id="lessonNav">
+          <a href="#start" class="nav-item active" data-nav="start"><span class="nav-index">01</span><span>Start here</span></a>
+          <a href="#orientation" class="nav-item" data-nav="orientation"><span class="nav-index">02</span><span>Core orientation</span></a>
+          <a href="#investigations" class="nav-item" data-nav="investigations"><span class="nav-index">03</span><span>Investigate</span></a>
+          <a href="#auxin" class="nav-item" data-nav="auxin"><span class="nav-index">04</span><span>Auxin signal</span></a>
+          <a href="#mechanism" class="nav-item" data-nav="mechanism"><span class="nav-index">05</span><span>Mechanism</span></a>
+          <a href="#evidence" class="nav-item" data-nav="evidence"><span class="nav-index">06</span><span>Evidence</span></a>
+          <a href="#applications" class="nav-item" data-nav="applications"><span class="nav-index">07</span><span>Apply &amp; challenge</span></a>
+          <a href="#recap" class="nav-item" data-nav="recap"><span class="nav-index">08</span><span>Recap</span></a>
+        </nav>
+        <div class="rail-key">
+          <span class="legend core">CORE</span><p>Required knowledge and skills.</p>
+          <span class="legend extended">EXTENDED</span><p>Deeper explanation, evidence or application.</p>
+        </div>
+        <button class="rail-top" data-scroll-top>↑ <span>Back to top</span></button>
+      </aside>
+
+      <main class="lesson-content">
+        <section class="hero section-anchor" id="start" data-section="start">
+          <div class="eyebrow">IGCSE / Form 5 Biology · Plant coordination</div>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="kicker">Trace the signal. Explain the bend.</p>
+              <h1>Tropic responses<br /><em>in plants</em></h1>
+              <p class="hero-lede">Plants are rooted in place, but their organs can still reposition themselves. Follow how light and gravity become growth directions — and how a chemical signal turns an uneven stimulus into a visible curve.</p>
+              <div class="hero-actions">
+                <a class="button button-dark" href="#orientation">Start the pathway <span>↘</span></a>
+                <button class="text-button" data-scroll-to="vocabulary">Open vocabulary</button>
+              </div>
+              <div class="hero-note"><span class="note-dot"></span><span><strong>Learning promise:</strong> every section says whether it is CORE or EXTENDED.</span></div>
+            </div>
+            <div class="hero-visual">
+              <div class="visual-label">A rooted plant can still move — by growing.</div>
+              <img src="/assets/starter-direction.png" alt="Seedling diagrams showing shoots and roots responding directionally to light and gravity" />
+              <div class="visual-caption"><span>01</span> Growth is directional, slow and permanent.</div>
+            </div>
+          </div>
+          <div class="objective-strip">
+            <div><span class="strip-number">01</span><strong>WHAT</strong><p>Describe tropisms in shoots and roots.</p></div>
+            <div><span class="strip-number">02</span><strong>WHY</strong><p>Connect plant orientation to light, water and minerals.</p></div>
+            <div><span class="strip-number">03</span><strong>HOW</strong><p>Investigate responses and trace auxin’s effect.</p></div>
+          </div>
+        </section>
+
+        <section class="lesson-section section-anchor" id="orientation" data-section="orientation">
+          <div class="section-heading"><div><span class="section-number">01 / 08</span><h2>Core orientation</h2></div><span class="tag core">CORE</span></div>
+          <p class="section-intro">Start with the direction words. A tropism is not an animal-like movement: it is a <strong>directional growth response</strong> to an environmental stimulus.</p>
+          <div class="definition-grid">
+            <article class="definition-card green"><span class="card-index">A</span><h3>Tropism</h3><p>Growth directed <strong>towards or away</strong> from a stimulus.</p><div class="mini-pair"><span>positive → toward</span><span>negative ← away</span></div></article>
+            <article class="definition-card amber"><span class="card-index">B</span><h3>Phototropism</h3><p>Growth towards or away from the direction of <strong>light</strong>.</p><div class="mini-pair"><span>shoot: positive</span><span>root: mostly negative</span></div></article>
+            <article class="definition-card blue"><span class="card-index">C</span><h3>Gravitropism</h3><p>Growth towards or away from Earth’s <strong>gravitational pull</strong>.</p><div class="mini-pair"><span>root: positive</span><span>shoot: negative</span></div></article>
+          </div>
+          <div class="callout callout-green"><span class="callout-icon">↗</span><p><strong>Key point.</strong> Tropic responses rely on differential cell elongation, so the response is a growth change and is effectively irreversible — not a rapid, reversible muscular movement.</p></div>
+          <div class="organ-response">
+            <div class="organ-copy"><span class="eyebrow">The whole-plant pattern</span><h3>Two organs, four directions</h3><p>Positive and negative responses work together. Shoots lift leaves into light; roots anchor the plant and explore soil for water and mineral ions.</p><div class="response-list"><div><b>SHOOT</b><span>light ↑ positive phototropism</span><span>gravity ↑ negative gravitropism</span></div><div><b>ROOT</b><span>light ↓ negative phototropism</span><span>gravity ↓ positive gravitropism</span></div></div></div>
+            <div class="diagram-frame split"><img src="/assets/shoot-root-system.png" alt="Diagram of shoot system responses to light and gravity" /><img src="/assets/root-system.png" alt="Diagram of root response to gravity and light" /></div>
+          </div>
+          <div class="check-in" data-quiz="core-check">
+            <div class="check-head"><span class="check-badge">CHECK 01</span><span>Pause and classify</span></div>
+            <h3>Which statements are correct? <small>Select all that apply.</small></h3>
+            <div class="options multi">
+              <label><input type="checkbox" name="core-check" value="a" /> <span>Plant shoots show positive phototropism and negative gravitropism.</span></label>
+              <label><input type="checkbox" name="core-check" value="b" /> <span>Primary roots show positive gravitropism by growing in the direction of gravity.</span></label>
+              <label><input type="checkbox" name="core-check" value="c" /> <span>Tropic responses are rapid, reversible movements caused by muscular contractions.</span></label>
+              <label><input type="checkbox" name="core-check" value="d" /> <span>Plant shoots grow downwards towards gravity to absorb dissolved minerals.</span></label>
+            </div>
+            <button class="button button-green quiz-submit" data-quiz-submit="core-check">Check my thinking</button>
+            <div class="quiz-feedback" id="feedback-core-check" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="lesson-section section-anchor" id="investigations" data-section="investigations">
+          <div class="section-heading"><div><span class="section-number">02 / 08</span><h2>Investigate the response</h2></div><span class="tag core">CORE</span></div>
+          <p class="section-intro">A strong practical does not just show a bend. It isolates the stimulus, measures the response and keeps other conditions constant.</p>
+          <div class="session-grid">
+            <article class="session-card"><span class="session-label">SESSION A · CORE 3</span><h3>Phototropism setup</h3><p>Use identical seedlings. Compare overhead light, one-sided light and darkness. Record direction and angle of shoot curvature.</p><ul class="tick-list"><li>Overhead light → shoot grows straight.</li><li>One-sided light → shoot bends towards the light.</li><li>Darkness → shoot grows tall without directional bending.</li></ul></article>
+            <figure class="image-card"><img src="/assets/phototropism-investigation.png" alt="Three experimental conditions: overhead light, unilateral light and darkness" /><figcaption><span>FIG 1</span> A fair comparison changes the light direction, not the seedling.</figcaption></figure>
+          </div>
+          <div class="session-grid reverse">
+            <figure class="image-card"><img src="/assets/clinostat.png" alt="A clinostat rotating a horizontal seedling to reduce a one-sided gravity stimulus" /><figcaption><span>FIG 2</span> The clinostat changes the direction of gravity relative to the seedling over time.</figcaption></figure>
+            <article class="session-card"><span class="session-label">SESSION B · CORE 3</span><h3>Testing gravitropism</h3><p>Place a growing seedling horizontally. A stationary seedling curves: the shoot up and the root down. A slowly rotating clinostat reduces directional curvature because gravity acts on all sides over time.</p><div class="micro-note"><strong>Do not say:</strong> the clinostat removes gravity. It reduces a consistent one-sided stimulus.</div></article>
+          </div>
+          <div class="variables-row"><div class="variable-card"><b>INDEPENDENT</b><span>Light direction, or stationary vs rotating.</span></div><div class="variable-card"><b>DEPENDENT</b><span>Angle of curvature or height difference across flanks.</span></div><div class="variable-card"><b>CONTROLLED</b><span>Species, age, temperature, moisture and nutrients.</span></div></div>
+          <details class="evidence-detail"><summary>What should a conclusion sound like?</summary><p>“The shoot bends towards unilateral light because the direction of light changes the distribution of growth on opposite flanks. The conclusion is supported only if the seedlings were comparable and the curvature was measured consistently.”</p></details>
+          <div class="check-in" data-quiz="investigation-check">
+            <div class="check-head"><span class="check-badge">CHECK 02</span><span>Experimental design</span></div>
+            <h3>Why rotate a horizontal seedling on a clinostat?</h3>
+            <div class="options">
+              <label><input type="radio" name="investigation-check" value="a" /> <span>To continually change gravity’s direction relative to the seedling, reducing a one-sided stimulus.</span></label>
+              <label><input type="radio" name="investigation-check" value="b" /> <span>To eliminate gravity completely from acting on plant cells.</span></label>
+              <label><input type="radio" name="investigation-check" value="c" /> <span>To increase photosynthesis by maximising air circulation.</span></label>
+              <label><input type="radio" name="investigation-check" value="d" /> <span>To stimulate faster root elongation through rotational friction.</span></label>
+            </div>
+            <button class="button button-green quiz-submit" data-quiz-submit="investigation-check">Check my thinking</button>
+            <div class="quiz-feedback" id="feedback-investigation-check" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="lesson-section section-anchor" id="auxin" data-section="auxin">
+          <div class="section-heading"><div><span class="section-number">03 / 08</span><h2>Auxin: the chemical signal</h2></div><span class="tag extended">EXTENDED</span></div>
+          <p class="section-intro">Plants have no nerves or muscles. Their coordination depends on chemical control. Auxin is made at the apex, then acts below it where cells expand.</p>
+          <div class="auxin-layout">
+            <div class="auxin-copy"><div class="numbered-step"><span>01</span><div><b>Synthesis</b><p>Auxin (for example, IAA) is made in the shoot tip, the <strong>apical meristem</strong>.</p></div></div><div class="numbered-step"><span>02</span><div><b>Transport</b><p>It diffuses downwards from the apex into the sub-apical <strong>elongation zone</strong>.</p></div></div><div class="numbered-step"><span>03</span><div><b>Action</b><p>In stems, a higher auxin level loosens the wall so turgor pressure can stretch the cell.</p></div></div><div class="key-card"><span>KEY IDEA</span><strong>Made at the apex.<br />Acts below the apex.</strong></div></div>
+            <figure class="diagram-frame tall"><img src="/assets/auxin-pathway.png" alt="Auxin produced in shoot tip and transported down to the zone of cell elongation" /><figcaption><span>FIG 3</span> The location of synthesis and the location of action are different.</figcaption></figure>
+          </div>
+          <div class="wall-grid"><article><h3>Normal auxin levels</h3><img src="/assets/cell-wall-normal.png" alt="Cell wall with rigid hydrogen bonds between cellulose microfibrils" /><p>Cellulose microfibrils retain rigid structural bonding. The cell stays compact and growth proceeds at a baseline rate.</p></article><article class="highlight"><h3>Elevated auxin levels</h3><img src="/assets/cell-wall-auxin.png" alt="Auxin and expansin proteins loosening a cell wall for elongation" /><p>Expansin proteins loosen cellulose bonds. Turgor pressure stretches the wall, elongating the cell.</p></article></div>
+          <div class="check-in" data-quiz="auxin-check">
+            <div class="check-head"><span class="check-badge">CHECK 03</span><span>Trace the signal</span></div>
+            <h3>Which sequence best explains a stem bending towards unilateral light?</h3>
+            <div class="options">
+              <label><input type="radio" name="auxin-check" value="a" /> <span>Auxin is made in the tip → moves to the shaded side → shaded cells elongate faster.</span></label>
+              <label><input type="radio" name="auxin-check" value="b" /> <span>Light destroys auxin on the lit side → lit cells divide faster.</span></label>
+              <label><input type="radio" name="auxin-check" value="c" /> <span>Auxin is made in the roots → moves upwards → all stem cells shrink.</span></label>
+              <label><input type="radio" name="auxin-check" value="d" /> <span>Gravity pulls auxin out of the tip → shaded cells stop growing.</span></label>
+            </div>
+            <button class="button button-green quiz-submit" data-quiz-submit="auxin-check">Check my thinking</button>
+            <div class="quiz-feedback" id="feedback-auxin-check" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="lesson-section section-anchor" id="mechanism" data-section="mechanism">
+          <div class="section-heading"><div><span class="section-number">04 / 08</span><h2>Mechanism: from stimulus to curve</h2></div><span class="tag extended">EXTENDED</span></div>
+          <p class="section-intro">The visible curve is a mechanical result of <strong>unequal expansion</strong>. Learn the sequence once, then use it to explain both light and gravity responses.</p>
+          <div class="mechanism-feature"><div class="mechanism-copy"><span class="eyebrow">Phototropism · EXTENDED 4–5(c–d)</span><h3>Light shifts the distribution of intact auxin.</h3><p>Unilateral light does not simply destroy auxin on the illuminated side. Instead, auxin is redistributed laterally across the tip towards the shaded side, then diffuses down that flank.</p><div class="sequence"><div><b>01</b><span>light from one side</span></div><div><b>02</b><span>auxin migrates to shade</span></div><div><b>03</b><span>shaded cells elongate</span></div><div><b>04</b><span>shoot bends to light</span></div></div></div><figure class="diagram-frame"><img src="/assets/phototropism-auxin.png" alt="Unequal auxin distribution makes cells on the shaded side elongate more" /><figcaption><span>FIG 4</span> Unequal cell expansion makes the stem curve.</figcaption></figure></div>
+          <div class="mechanism-feature reverse"><figure class="diagram-frame"><img src="/assets/shoot-root-comparison.png" alt="Shoot gravitropism: auxin accumulates on the lower side and stimulates elongation" /><figcaption><span>FIG 5</span> In shoots, lower-side auxin promotes elongation.</figcaption></figure><div class="mechanism-copy"><span class="eyebrow">Shoot gravitropism · EXTENDED 5(d)</span><h3>Gravity also creates an auxin gradient.</h3><p>In a horizontal shoot, auxin accumulates on the lower side. Because auxin stimulates elongation in shoots, lower-side cells grow longer and the shoot bends upward — away from gravity.</p><div class="contrast-band"><b>SHOOT</b><span>high auxin → more elongation → bends up</span></div><div class="contrast-band root"><b>ROOT · extra</b><span>high auxin → inhibits elongation → bends down</span></div></div></div>
+          <div class="comparison-table" role="table" aria-label="Shoot and root responses to auxin"><div class="table-row table-head" role="row"><span>Organ</span><span>Where auxin collects</span><span>Effect of high auxin</span><span>Direction</span></div><div class="table-row" role="row"><b>Shoot</b><span>Lower side</span><span>Stimulates elongation</span><strong>Up · negative gravitropism</strong></div><div class="table-row" role="row"><b>Root <small>extra</small></b><span>Lower side</span><span>Inhibits elongation</span><strong>Down · positive gravitropism</strong></div></div>
+        </section>
+
+        <section class="lesson-section section-anchor" id="evidence" data-section="evidence">
+          <div class="section-heading"><div><span class="section-number">05 / 08</span><h2>Evidence that made the model</h2></div><span class="tag extended">EXTENDED</span></div>
+          <p class="section-intro">The auxin model is not a guess. A chain of classic experiments tested where the stimulus is sensed, how a signal travels and whether that signal is chemical.</p>
+          <div class="evidence-grid"><article><span class="session-label">COLEOPTILES</span><h3>Is the tip essential?</h3><p>Intact tips curve. Decapitated tips do not. An opaque cap blocks curvature, so the apex must sense unilateral light.</p><img src="/assets/coleoptile-experiments.png" alt="Coleoptile experiments comparing intact tips, decapitated tips, opaque caps and gelatin blocks" /></article><article><span class="session-label">WENT’S AGAR BLOCK</span><h3>Can the signal diffuse?</h3><p>Excised tips release a water-soluble signal into agar. An off-centre agar block makes a decapitated shoot bend in darkness, proving a diffusible chemical can create unequal elongation.</p><img src="/assets/went-agar-block.png" alt="Went's agar block experiment showing a chemical signal diffusing from a shoot tip" /></article></div>
+          <div class="barrier-note"><div class="barrier-icon">∥</div><div><b>Mica sheet evidence</b><p>An impermeable mica barrier prevents curvature when placed on the shaded side, but not when placed on the lit side. The result supports directional signal movement through the shaded flank.</p></div></div>
+          <div class="histology-row"><div><span class="eyebrow">Cell evidence · EXTENDED 5(d)</span><h3>It is expansion, not extra division.</h3><p>Histological sections show shaded-flank epidermal cells stretched to roughly 2–3 times the length of lit-flank cells. The rate of cell division is not the cause of the bend; the elongation zone is.</p></div><div class="histology-stat"><strong>2–3×</strong><span>longer cells on the shaded flank</span></div></div>
+          <div class="check-in" data-quiz="evidence-check">
+            <div class="check-head"><span class="check-badge">CHECK 04</span><span>Read the evidence</span></div>
+            <h3>What does the gelatin-block result show?</h3>
+            <div class="options">
+              <label><input type="radio" name="evidence-check" value="a" /> <span>The tropic signal can be a diffusible, water-soluble chemical.</span></label>
+              <label><input type="radio" name="evidence-check" value="b" /> <span>The signal must travel as an electrical impulse through a nerve.</span></label>
+              <label><input type="radio" name="evidence-check" value="c" /> <span>Light directly stretches the cells without any chemical regulator.</span></label>
+              <label><input type="radio" name="evidence-check" value="d" /> <span>Cell division on the shaded side is the direct cause of curvature.</span></label>
+            </div>
+            <button class="button button-green quiz-submit" data-quiz-submit="evidence-check">Check my thinking</button>
+            <div class="quiz-feedback" id="feedback-evidence-check" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="lesson-section section-anchor" id="applications" data-section="applications">
+          <div class="section-heading"><div><span class="section-number">06 / 08</span><h2>Apply &amp; challenge</h2></div><span class="tag extended">EXTENDED</span></div>
+          <p class="section-intro">The same principles travel well beyond the standard diagram. Use the model to spot misconceptions, explain unusual environments and evaluate an unfamiliar setup.</p>
+          <div class="challenge-grid"><article class="challenge-card"><span class="session-label">MISCONCEPTION CHECK</span><h3>“Sunlight destroys the auxin.”</h3><p><strong>False.</strong> Light triggers lateral transport of intact auxin molecules towards the shaded side. The gradient, not photodestruction, explains the bend.</p><img src="/assets/misconceptions.png" alt="Illustration of common tropism misconceptions and corrected explanations" /></article><article class="challenge-card dark"><span class="session-label">SPACE BIOLOGY</span><h3>What guides growth in microgravity?</h3><p>Without a strong gravitational cue, roots may lose their orientation. Directional LED light can still guide growth: roots grow away from light while shoots grow towards it.</p><img src="/assets/microgravity.png" alt="Plant experiments in space showing light-guided growth in microgravity" /></article></div>
+          <div class="applications-row"><div><span class="eyebrow">Beyond the stated syllabus</span><h3>Auxin in practice</h3><p>Auxins can encourage roots to form on cuttings in rooting powders. Synthetic auxins can also disrupt broad-leaved weeds. These are applications; the syllabus focus remains auxin’s effect on shoot growth.</p></div><div class="application-chips"><span>rooting powders</span><span>weed control</span><span>plant propagation</span></div></div>
+          <div class="check-in" data-quiz="plenary-check">
+            <div class="check-head"><span class="check-badge">CHECK 05</span><span>Transfer the model</span></div>
+            <h3>An opaque foil cap covers a shoot tip before unilateral light exposure. What is the best prediction?</h3>
+            <div class="options">
+              <label><input type="radio" name="plenary-check" value="a" /> <span>The shoot grows straight because the cap blocks tip photoreceptors and prevents directional auxin transport.</span></label>
+              <label><input type="radio" name="plenary-check" value="b" /> <span>The shoot bends more strongly because foil increases auxin production in the tip.</span></label>
+              <label><input type="radio" name="plenary-check" value="c" /> <span>The shoot stops all growth because the cap removes turgor pressure.</span></label>
+              <label><input type="radio" name="plenary-check" value="d" /> <span>The shoot bends towards gravity because the foil adds mass to the apex.</span></label>
+            </div>
+            <button class="button button-green quiz-submit" data-quiz-submit="plenary-check">Check my thinking</button>
+            <div class="quiz-feedback" id="feedback-plenary-check" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="lesson-section section-anchor" id="recap" data-section="recap">
+          <div class="section-heading"><div><span class="section-number">07 / 08</span><h2>Recap: can you say it precisely?</h2></div><span class="tag core">CORE + EXTENDED</span></div>
+          <div class="recap-map"><div class="recap-line"></div><div class="recap-node"><span>01</span><div><b>Stimulus</b><p>Light or gravity provides direction.</p></div></div><div class="recap-node"><span>02</span><div><b>Distribution</b><p>Auxin shifts to one side in the relevant tissue.</p></div></div><div class="recap-node"><span>03</span><div><b>Expansion</b><p>Cell walls loosen and turgor stretches cells.</p></div></div><div class="recap-node"><span>04</span><div><b>Response</b><p>Unequal growth curves the organ.</p></div></div></div>
+          <div class="recap-phrase"><span>Complete the chain</span><p>Auxin is produced in the shoot <strong>tip</strong>, diffuses downwards, and accumulates on the <strong>shaded</strong> side under unilateral illumination, causing cells to <strong>elongate</strong> and bending the stem towards light.</p></div>
+          <div class="plenary-card"><div><span class="eyebrow">DEEP EVALUATION</span><h3>Explain this, not just name it.</h3><p>Predict the result of an opaque foil cap versus a transparent glass cap on a seedling shoot. Your explanation should mention the tip, lateral auxin transport, the elongation zone and why the final curvature differs.</p></div><img src="/assets/plenary-evaluation.png" alt="Plenary evaluation diagram comparing capped and uncapped plant shoots" /></div>
+        </section>
+
+        <section class="vocabulary-section section-anchor" id="vocabulary" data-section="vocabulary">
+          <div class="section-heading"><div><span class="section-number">08 / 08</span><h2>Vocabulary deck</h2></div><span class="tag core">CORE</span></div>
+          <div class="vocab-toolbar"><p>Use the filter to find the word you need.</p><input id="vocabSearch" type="search" placeholder="Search terms…" aria-label="Search vocabulary" /></div>
+          <div class="vocab-grid" id="vocabGrid">
+            <article class="vocab-card" data-term="tropism"><b>Tropism</b><p>Directional growth towards or away from a stimulus.</p></article>
+            <article class="vocab-card" data-term="phototropism"><b>Phototropism</b><p>Directional growth response to light.</p></article>
+            <article class="vocab-card" data-term="gravitropism geotropism"><b>Gravitropism</b><p>Directional growth response to gravity.</p></article>
+            <article class="vocab-card" data-term="auxin iaa"><b>Auxin</b><p>A growth regulator produced in shoot tips that stimulates stem-cell elongation.</p></article>
+            <article class="vocab-card" data-term="clinostat"><b>Clinostat</b><p>A rotating apparatus used to reduce a consistent directional gravitational influence.</p></article>
+            <article class="vocab-card" data-term="apical meristem"><b>Apical meristem</b><p>Dividing tissue at the shoot tip where auxin is produced.</p></article>
+            <article class="vocab-card" data-term="elongation zone"><b>Elongation zone</b><p>Sub-apical region where cells enlarge and lengthen.</p></article>
+            <article class="vocab-card" data-term="differential elongation"><b>Differential elongation</b><p>Unequal cell expansion on opposite sides of an organ, causing curvature.</p></article>
+          </div>
+          <div class="next-topic"><span class="next-icon">→</span><div><span class="eyebrow">LOOKING AHEAD</span><h3>Coordination &amp; hormones</h3><p>Next, contrast plant chemical control with the rapid electrical impulses and reflex arcs of the human nervous system.</p></div></div>
+        </section>
+        <footer class="site-footer"><div><span class="brand-mark small" aria-hidden="true"><span></span><i></i></span><strong>GROWTH TRACE</strong></div><p>Built from the 14.5 Tropic Responses worksheet deck · Study with precision.</p></footer>
+      </main>
+    </div>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
