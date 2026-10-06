@@ -29,3 +29,33 @@ body{font-size:18px}
 .plenary-visual strong{display:block;font-size:19px;line-height:1.2;margin-top:5px}
 .plenary-visual p{font-size:15px;color:var(--muted);margin:6px 0 0}
 @media(max-width:720px){.plenary-gallery{grid-template-columns:1fr}.plenary-visual img{height:270px}}
+
+/* Large-print pass: prioritize classroom projection and worksheet-scale visual reading. */
+body{font-size:19px;line-height:1.72}
+.eyebrow,.section-number,.session-label{font-size:13px}
+.topbar-meta,.nav-item{font-size:15px}
+.rail-heading{font-size:14px}
+.rail-key p{font-size:13px}
+.visual-label,.visual-caption,.image-card figcaption,.diagram-frame figcaption{font-size:14px}
+.objective-strip strong{font-size:13px}
+.objective-strip p{font-size:16px;line-height:1.45}
+.definition-card p,.mini-pair{font-size:16px}
+.organ-response{grid-template-columns:.9fr 1.1fr;gap:36px;margin-top:52px}
+.organ-copy h3{font-size:39px}
+.organ-copy>p{font-size:19px;line-height:1.55}
+.response-list{gap:19px;margin-top:30px}
+.response-list>div{grid-template-columns:98px 1fr;gap:8px 18px;font-size:18px;padding-bottom:18px}
+.response-list b{font-size:14px}
+.organ-response .diagram-frame.split{padding:22px 22px 17px;gap:16px}
+.organ-response .diagram-frame.split img{height:360px}
+/* Figure 1 is a wide investigation visual: give it nearly the full available card height. */
+.session-grid:first-of-type .figure-one{padding:22px 24px 18px}
+.session-grid:first-of-type .figure-one img{height:430px;object-fit:contain}
+.session-grid:first-of-type .figure-one figcaption{font-size:16px;margin-top:16px}
+.session-card p,.session-card li,.variable-card span,.evidence-detail p,.micro-note,.barrier-note p,.challenge-card p,.applications-row p{font-size:16px}
+.check-in h3{font-size:26px}
+.options label span{font-size:17px}
+.quiz-feedback{font-size:17px}
+.vocab-card p{font-size:16px}
+@media(max-width:980px){.organ-response{grid-template-columns:1fr}.organ-response .diagram-frame.split img{height:320px}.session-grid:first-of-type .figure-one img{height:390px}}
+@media(max-width:720px){body{font-size:18px}.organ-copy h3{font-size:32px}.organ-copy>p{font-size:18px}.response-list>div{grid-template-columns:84px 1fr;font-size:17px}.organ-response .diagram-frame.split{grid-template-columns:1fr}.organ-response .diagram-frame.split img{height:270px}.session-grid:first-of-type .figure-one img{height:300px}.session-grid:first-of-type .figure-one{padding:16px}.session-grid:first-of-type .figure-one figcaption{font-size:14px}}
