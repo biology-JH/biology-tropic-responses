@@ -17,6 +17,9 @@ A single-page, self-paced biology lesson based on `14.5Tropicresponses.pptx`, pr
 - **Wordmark/mark:** a simple two-line leaf + arrow mark beside the wordmark “GROWTH TRACE”.
 - **Signature brand color:** chlorophyll green `#2F7D4A`.
 
+## Readability update
+The opening section now visibly labels the **STARTER**, presents **Learning objectives — What / Why / How**, and the final evaluation is explicitly labeled **PLENARY**. Body copy and instructional labels are larger, while diagram frames and experiment visuals use more vertical space. The final plenary visual is now a source-derived coleoptile experiment diagram rather than a speech-bubble/dialogue graphic.
+
 ## Lesson structure
 1. Start here: objectives, tropism definition, positive/negative responses.
 2. Core orientation: phototropism, gravitropism, shoot/root organ responses.
