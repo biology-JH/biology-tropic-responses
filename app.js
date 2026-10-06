@@ -1,9 +1,9 @@
 const quizData={
   'core-check':{correct:['a','b'],feedback:'Correct. Shoots grow towards light and away from gravity; primary roots grow in the direction of gravity. Tropisms are growth responses, not muscular movements.'},
-  'investigation-check':{correct:'a',feedback:'Correct. A clinostat continually changes gravity’s direction relative to the seedling, reducing a consistent one-sided stimulus. It does not remove gravity.'},
-  'auxin-check':{correct:'a',feedback:'Correct. Auxin is made at the shoot tip, moves towards the shaded side and causes greater elongation there, so the shoot curves towards light.'},
-  'evidence-check':{correct:'a',feedback:'Correct. Curvature through a gelatin block supports the idea of a diffusible, water-soluble chemical signal.'},
-  'plenary-check':{correct:'a',feedback:'Correct. An opaque cap blocks light detection at the tip, so lateral auxin transport is not established and the shoot grows straight. A transparent cap would permit normal curvature.'}
+  'investigation-check':{correct:'a',feedback:'Correct. The smaller angle is evidence that rotation reduces a consistent one-sided gravity stimulus. It does not remove gravity, auxin or growth.'},
+  'auxin-check':{correct:'a',feedback:'Correct. The unequal cell lengths, despite similar division rates, identify differential elongation as the cause of curvature rather than extra cell division.'},
+  'evidence-check':{correct:'a',feedback:'Correct. The result supports a diffusible, water-soluble chemical signal released by the tip that can move through gelatin and produce unequal elongation.'},
+  'plenary-check':{correct:'a',feedback:'Correct. Blocking light at the tip prevents the directional auxin gradient. A transparent control still detects light, redistributes auxin and curves through unequal elongation.'}
 };
 const answered=new Set();
 function showFeedback(id,correct){const box=document.getElementById(`feedback-${id}`); if(!box)return; const data=quizData[id]; if(correct){box.className='quiz-feedback feedback-correct';box.textContent=`✓ ${data.feedback}`;answered.add(id)}else{box.className='quiz-feedback feedback-try';box.textContent='Not quite. Re-read the highlighted mechanism and try again — the explanation is in the feedback you are looking for.'}}

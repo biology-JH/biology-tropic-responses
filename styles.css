@@ -19,3 +19,13 @@ body{font-size:18px}
 .options label span{font-size:16px}
 .objective-strip p{font-size:15px}
 @media(max-width:720px){body{font-size:17px}.hero-lede{font-size:20px}.section-intro{font-size:20px}.hero-visual img{height:300px}.diagram-frame img,.image-card img{height:280px}.diagram-frame.tall img{height:430px}.diagram-frame.split img{height:230px}.evidence-grid img{height:260px}.plenary-card img{height:260px}.objectives-heading{display:block}.objectives-heading h2{margin-top:6px}}
+
+/* Visual plenary: large recall images with an explanation prompt beside each one. */
+.plenary-gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}
+.plenary-visual{background:var(--surface);border:1px solid var(--line);padding:18px;display:grid;grid-template-rows:minmax(250px,1fr) auto}
+.plenary-visual img{display:block;width:100%;height:300px;object-fit:contain}
+.plenary-visual div{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}
+.plenary-visual span{display:block;color:var(--green);font-size:10px;font-weight:850;letter-spacing:.14em}
+.plenary-visual strong{display:block;font-size:19px;line-height:1.2;margin-top:5px}
+.plenary-visual p{font-size:15px;color:var(--muted);margin:6px 0 0}
+@media(max-width:720px){.plenary-gallery{grid-template-columns:1fr}.plenary-visual img{height:270px}}
