@@ -59,3 +59,31 @@ body{font-size:19px;line-height:1.72}
 .vocab-card p{font-size:16px}
 @media(max-width:980px){.organ-response{grid-template-columns:1fr}.organ-response .diagram-frame.split img{height:320px}.session-grid:first-of-type .figure-one img{height:390px}}
 @media(max-width:720px){body{font-size:18px}.organ-copy h3{font-size:32px}.organ-copy>p{font-size:18px}.response-list>div{grid-template-columns:84px 1fr;font-size:17px}.organ-response .diagram-frame.split{grid-template-columns:1fr}.organ-response .diagram-frame.split img{height:270px}.session-grid:first-of-type .figure-one img{height:300px}.session-grid:first-of-type .figure-one{padding:16px}.session-grid:first-of-type .figure-one figcaption{font-size:14px}}
+
+/* Super-size visual pass: diagrams remain large enough for IGCSE classroom projection. */
+.hero-visual img{height:390px}
+.lesson-section .diagram-frame img{height:420px}
+.lesson-section .diagram-frame.tall img{height:560px}
+.lesson-section .image-card img{height:380px}
+.lesson-section .evidence-grid img{height:340px}
+.lesson-section .challenge-card img{height:300px}
+.lesson-section .wall-grid img{height:210px}
+.lesson-section#orientation .organ-response{grid-template-columns:1fr;gap:30px;align-items:start}
+.lesson-section#orientation .organ-copy h3{font-size:44px}
+.lesson-section#orientation .organ-response .diagram-frame.split{grid-template-columns:1fr;gap:24px;padding:26px 28px 22px}
+.lesson-section#orientation .organ-response .diagram-frame.split img{height:470px}
+.lesson-section#investigations .session-grid:first-of-type{grid-template-columns:1fr;gap:24px}
+.lesson-section#investigations .session-grid:first-of-type .figure-one{padding:28px 30px 24px}
+.lesson-section#investigations .session-grid:first-of-type .figure-one img{width:100%;height:430px;object-fit:fill}
+.lesson-section#investigations .session-grid:first-of-type .figure-one figcaption{font-size:18px;margin-top:18px}
+@media(max-width:720px){
+  .hero-visual img{height:330px}
+  .lesson-section .diagram-frame img{height:350px}
+  .lesson-section .diagram-frame.tall img{height:440px}
+  .lesson-section .image-card img{height:330px}
+  .lesson-section#orientation .organ-copy h3{font-size:35px}
+  .lesson-section#orientation .organ-response .diagram-frame.split img{height:330px}
+  .lesson-section#investigations .session-grid:first-of-type .figure-one{padding:18px}
+  .lesson-section#investigations .session-grid:first-of-type .figure-one img{height:350px}
+  .lesson-section#investigations .session-grid:first-of-type .figure-one figcaption{font-size:15px}
+}
